@@ -1,0 +1,295 @@
+Product Requirements Document
+
+
+Product Name: < product name >
+Version No.: <version #>
+Last Modified: <date>
+
+//////////////////////////////////////////////////////////////////////////////////
+
+1	Table of Contents
+	1	Table of Contents	2
+	2	Revision History	4
+	3	Introduction	5
+		3.1	Purpose	5
+		3.2	Scope	5
+		3.3	Definitions, Acronyms, and Abbreviations	5
+		3.4	References	5
+	4	Product Overview	5
+		4.1	Product Users	5
+			4.1.1	Use Case Actors	6
+			4.1.2	Goals	6
+	5	Assumptions and Dependencies	6
+	6	High-level Subsystem Requirements	6
+		6.1	Subsystem 1	6
+			6.1.1	Description	6
+			6.1.2	Requirements	7
+			6.1.3	Roles/Privileges	7
+			6.1.4	Use Cases	7
+			6.1.5	User Flows	7
+				6.1.5.1	XYZ Form1 (Referenced as “PRD-Subsystem1-XYZ1”)	7
+					6.1.5.1.1	Form Description	7
+					6.1.5.1.2	Required Functionality	7
+					6.1.5.1.3	Should-have Functionality	7
+					6.1.5.1.4	Nice to-Have Functionality	7
+		6.2	Subsystem 2	7
+			6.2.1	Description	7
+			6.2.2	Requirements	8
+			6.2.3	Roles/Privileges	8
+			6.2.4	Use Cases	8
+			6.2.5	User Flows	8
+				6.2.5.1	XYZ Form1 (Referenced as “PRD-Subsystem2-XYZ1”)	8
+					6.2.5.1.1	Form Description	8
+					6.2.5.1.2	Required Functionality	8
+					6.2.5.1.3	Should-have Functionality	8
+					6.2.5.1.4	Nice to-Have Functionality	8
+	7	System Requirements	8
+		7.1	Platform Support	8
+		7.2	Database Support	9
+		7.3	Application Server Support	9
+		7.4	Browser Support	9
+	8	Application Requirements	9
+		8.1	Performance/Scalability	9
+		8.2	Security	9
+		8.3	Localization	9
+		8.4	Installation Requirements	9
+		8.5	Monitoribility	9
+		8.6	Audit Requirements	9
+		8.7	External Interface Requirements	9
+		8.8	Customization/White Labeling	10
+		8.9	Upgrades	10
+	9	Other Requirements	10
+		9.1	Supportability	10
+		9.2	Licensing Requirements	10
+		9.3	Legal, Copyright and Other Notices	10
+		9.4	Applicable Standards	10
+
+//////////////////////////////////////////////////////////////////////////////////
+
+2	Revision History 
+
+	Revision	Date	Author	Remarks
+	<Revision No.>	<Creation date>	<Author>	<Remarks>
+
+////////////////////////////////////////////////////////////////////////////////// 
+
+3	Introduction 
+	Introduction to the product.
+
+3.1	Purpose
+
+	Describe purpose, structure of the document
+
+3.2	Scope
+
+	Define the scope, dependencies with other systems
+
+3.3	Definitions, Acronyms, and Abbreviations
+
+	This section identifies terms introduced and used within this document that may not be commonly known.
+
+	Term		Meaning
+	Account		<This is the definition for Term1> 
+	Filter		<This is the definition for Term1>
+
+3.4	References
+
+	List of all documents referenced elsewhere in the PRD.
+
+//////////////////////////////////////////////////////////////////////////////////
+
+4	Product Overview
+	Describe the product in detail.
+
+4.1	Product Users
+
+	Introductory paragraph of the types of systems users.  
+
+4.1.1	Use Case Actors
+
+	The following table describes the actors of the system.  An “actor” may be generally described as a functional role of a user of the system.
+
+	Describe all the actors of the system below.
+
+	Actor									Description
+	Actor 1									Provide assistance and consulting-type services to…
+	Actor 2 (e.g., System Administrator)	Manages system policies and localize system for company
+	Actor 3									Collects sample data in the field to…
+
+4.1.2	Goals
+
+	The following list describes the primary system goals for each of the actors:
+
+	Actor 1
+		Create short-term operating plans and budget
+		Create condensed financial summary budget report
+		Generate summary plan
+
+//////////////////////////////////////////////////////////////////////////////////
+
+5	Assumptions and Dependencies
+
+	List all the assumptions and dependencies.
+
+//////////////////////////////////////////////////////////////////////////////////
+
+6	High-level Subsystem Requirements
+
+	Describe the major components of the system and how the user interacts with each and/or how they interact with each other.  Include a diagram illustrating the different subsystems.
+
+6.1	subsystemsystem 1
+
+6.1.1	Description
+
+	Describe the general functionality of Subsystem 1.
+
+6.1.2	Requirements
+
+	List all the high level requirements to be supported by the Subsystem 1.
+
+6.1.3	Roles/Privileges
+
+6.1.4	Use Cases 
+
+	Refer to the Use Case document.
+
+6.1.5	User Flows
+
+	Illustrate the user facing screen flow for the subsystem.  All screens are described below:
+
+6.1.5.1	XYZ Form1 (Referenced as “PRD-Subsystem1-XYZ1”)
+
+	Describe purpose of the form and how it will be used by the users.
+
+	Show screen mockup.
+
+6.1.5.1.1	Form Description
+
+	Describe the data that appears on the screen
+
+6.1.5.1.2	Required Functionality
+
+	Describe the required functionality on the screen
+
+6.1.5.1.3	Should-have Functionality
+
+	Describe the should-have functionality on the screen
+
+6.1.5.1.4	Nice to-Have Functionality
+
+	Describe the nice-to-have functionality on the screen
+
+6.2	Subsystem 2
+
+6.2.1	Description
+
+	Describe the general functionality of Subsystem 2.
+
+6.2.2	Requirements
+
+	List all the high level requirements to be supported by the Subsystem 2.
+
+6.2.3	Roles/Privileges
+
+6.2.4	Use Cases 
+
+	Refer to the Use Case document.
+
+6.2.5	User Flows
+
+	Illustrate the user facing screen flow for the subsystem.  All screens are described below:
+
+6.2.5.1	XYZ Form1 (Referenced as “PRD-Subsystem2-XYZ1”)
+
+	Describe purpose of the form and how it will be used by the users.
+
+	Show screen mockup.
+
+6.2.5.1.1	Form Description
+
+	Describe the data that appears on the screen
+
+6.2.5.1.2	Required Functionality
+
+	Describe the required functionality on the screen
+
+6.2.5.1.3	Should-have Functionality
+
+	Describe the should-have functionality on the screen
+
+6.2.5.1.4	Nice to-Have Functionality
+
+	Describe the nice-to-have functionality on the screen
+
+//////////////////////////////////////////////////////////////////////////////////
+
+7	System Requirements
+
+7.1	Platform Support
+
+	List the platforms that need to be supported.
+
+7.2	Database Support
+
+	List the databases that need to be supported.
+
+7.3	Application Server Support
+
+	List the application servers that need to be supported.
+
+7.4	Browser Support
+
+//////////////////////////////////////////////////////////////////////////////////
+
+8	Application Requirements
+
+8.1	Performance/Scalability
+
+	Describe how many concurrent users the system needs to support, response times if any and related things.
+
+8.2	Security
+
+	Describe whether SSL need to be supported, other security considerations (no clear text password, certificate based authentication, PKI support)
+
+8.3	Localization
+
+	List any multi language support, Unicode support, time zones and others
+
+8.4	Installation Requirements
+
+	Describe if standard installers is required, ease of install 
+
+8.5	Monitoribility
+
+	Describe monitoring requirements – email/pager alert in case of suspected failure, parameters to be monitored and conditions for alerts.
+
+8.6	Audit Requirements
+
+	List audit requirements -- logging, audit logs.
+
+8.7	External Interface Requirements
+
+8.8	Customization/White Labeling
+
+8.9	Upgrades
+
+	Describe plan for upgrades.
+
+//////////////////////////////////////////////////////////////////////////////////
+
+9	Other Requirements
+
+9.1	Supportability
+
+9.2	Licensing Requirements
+
+	Describe any third party software that requires a licensing fee. List all the open source products that will be used.
+
+9.3	Legal, Copyright and Other Notices
+
+	This section describes any necessary legal disclaimers, warranties, copyright notices, patent notices, trademark, or logo compliance issues for the software.
+
+9.4	Applicable Standards
+
+	This section describes by reference any applicable standard and the specific sections of any such standards that apply to the system being described. For example, this could include legal, quality and regulatory standards, industry standards for usability, interoperability, internationalization, operating system compliance, and so forth.
+
