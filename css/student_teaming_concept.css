@@ -1,0 +1,27 @@
+body {
+    background-color: #C3D1D6;
+    margin: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#team {
+	background-color: #DCEDF2;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 30px 10px 0px 10px;
+	padding: 15px;
+	box-shadow: 10px 10px 13px #B3C0C4;
+	width: 400px;
+	height: 300px;
+}
+
+#team_name {
+	font-size: 2em;
+	color: #555859;
+	margin-bottom: 20px;
+}
+
+#member {
+	font-size: 1.5em;
+	margin: 10px 0px 0px 20px;
+}
