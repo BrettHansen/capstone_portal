@@ -3,8 +3,8 @@
 header("Access-Control-Allow-Origin: *");
 $number = $_POST['number'];
 
-$first_raw = file_get_contents("http://deron.meranda.us/data/census-derived-all-first.txt");
-$last_raw = file_get_contents("https://raw.githubusercontent.com/colinangusmackay/Xander.PasswordValidator/master/src/Xander.PasswordValidator/Resources/Surnames.txt");
+$first_raw = file_get_contents("http://asucapstoneportal.com/first_names.txt");
+$last_raw = file_get_contents("http://asucapstoneportal.com/surnames.txt");
 $first_split = preg_split('/\s+/', $first_raw);
 $last_array = preg_split('/\s+/', $last_raw);
 
