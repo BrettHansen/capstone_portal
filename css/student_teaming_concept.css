@@ -25,3 +25,25 @@ body {
 	font-size: 1.5em;
 	margin: 10px 0px 0px 20px;
 }
+
+.blank {
+	font-size: 1.5em;
+	margin: 10px 0px 0px 20px;
+}
+
+.join {
+	font-size: 1.5em;
+	font-style: italic;
+	margin: 10px 0px 0px 20px;
+	color: #666666;
+	text-align: center;
+}
+
+a:hover {
+	color: #BFBFBF;
+}
+
+a {
+	color: #666666;
+    text-decoration: none;
+}

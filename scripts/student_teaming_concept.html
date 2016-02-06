@@ -10,7 +10,6 @@
         var divs = document.getElementsByClassName("member");
         for(var i = 0; i < divs.length; i++) {
         	divs[i].innerHTML = names[i];
-        	console.log(names[i]);
         }
     };
     xhttp.onerror = function() {
@@ -31,10 +30,10 @@
 	<div id="team_name">Team 1</div>
 	<div class="member">Student Name</div>
 	<div class="member">Student Name</div>
-	<div class="member">Student Name</div>
-	<div class="member">Student Name</div>
-	<div class="member">Student Name</div>
-	<div class="member">Student Name</div>
+	<div class="blank">&nbsp</div>
+	<div class="blank">&nbsp</div>
+	<div class="blank">&nbsp</div>
+	<div class="join"><a href="">Join This Team</a></div>
 </div>
 <div id="team">
 	<div id="team_name">Team 2</div>
