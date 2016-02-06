@@ -1,4 +1,26 @@
 <html>
+
+<script type="text/javascript">
+	var url = 'http://www.asucapstoneportal.com/random_names.php';
+    var xhttp = new XMLHttpRequest();
+    
+    xhttp.onload = function() {
+        var names = JSON.parse(xhttp.responseText);
+
+        var divs = document.getElementsByClassName("member");
+        for(var i = 0; i < divs.length; i++) {
+        	divs[i].innerHTML = names[i];
+        	console.log(names[i]);
+        }
+    };
+    xhttp.onerror = function() {
+        console.log(xhttp.responseText);
+    };
+    xhttp.open('POST', url, true);
+    xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhttp.send("number=36");
+</script>
+
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/student_teaming_concept.css">
 	<title>Team Choosing - Concept</title>
@@ -7,57 +29,57 @@
 
 <div id="team">
 	<div id="team_name">Team 1</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
 </div>
 <div id="team">
 	<div id="team_name">Team 2</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
 </div>
 <div id="team">
 	<div id="team_name">Team 3</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
 </div>
 <div id="team">
 	<div id="team_name">Team 4</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
 </div>
 <div id="team">
 	<div id="team_name">Team 5</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
 </div>
 <div id="team">
 	<div id="team_name">Team 6</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
-	<div id="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
+	<div class="member">Student Name</div>
 </div>
 
 </body>

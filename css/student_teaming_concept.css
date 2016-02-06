@@ -5,7 +5,7 @@ body {
 }
 
 #team {
-	background-color: #DCEDF2;
+	background-color: #EDF7FA;
 	border-radius: 5px;
 	display: inline-block;
 	margin: 30px 10px 0px 10px;
@@ -21,7 +21,7 @@ body {
 	margin-bottom: 20px;
 }
 
-#member {
+.member {
 	font-size: 1.5em;
 	margin: 10px 0px 0px 20px;
 }
