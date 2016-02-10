@@ -1,0 +1,26 @@
+SCHEDULE OF DELIVERABLES
+________________________
+Feb 12: Project Inception
+	1. Mockups of major components
+	2. Projected schedule of deliverables
+
+Feb 26: Requirements Assessment
+	1. Complete "Proposal Requirements" document
+	2. Outline of Requirements Document
+
+Mar 11: Basic Portal Functionality
+	1. Basic backend framework of portal
+	2. Basic front-end UI
+	3. Database scheme
+
+Mar 25: Proposer Framework
+	1. Proposal submission capability
+	2. Sponsor dashboard
+
+Apr 18: Instructor Framework
+	1. Project management capability
+	2. Class management capability
+
+Apr 22: Student Framework
+	1. Team forming capability
+	2. Student dashboard
