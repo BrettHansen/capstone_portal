@@ -1,0 +1,174 @@
+<?require_once "header.php";?>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#">ASU Capstone Portal</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Teams</a></li>
+            <!-- <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li> -->
+            <li><a href="#">Sign Out</a></li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                	<h1>Student Dashboard</h1>
+
+                	<div class="row">
+                		<div class="col-lg-8">
+                			<div class="row">
+		                		<div class="col-lg-6">
+									<div class="panel panel-default" id='student-profile'>
+										<div class="panel-heading">
+											<h3 class="panel-title">Profile</h3>
+										</div>
+										<div class="panel-body">
+											Panel content
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="panel panel-default" id='student-profile'>
+										<div class="panel-heading">
+											<h3 class="panel-title">Announcements</h3>
+										</div>
+										<div class="panel-body">
+											<h4>Homework Reminder   <small>  3-16 3:55pm</small></h4>
+											<p>This is an announcement to say that some stuff is going to happen</p>
+											<h4>Minutes link   <small>  3-16 3:55pm</small></h4>
+											<p>This is an announcement to say that some stuff is going to happen</p>
+											<h4>Projects Available   <small>  3-16 3:55pm</small></h4>
+											<p>This is an announcement to say that some stuff is going to happen</p>
+											<h4>Project Reqirements   <small>  3-16 3:55pm</small></h4>
+											<p>This is an announcement to say that some stuff is going to happen</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+		                		<div class="col-lg-6">
+									<div class="panel panel-default" id='student-profile'>
+										<div class="panel-heading">
+											<h3 class="panel-title">My Team</h3>
+										</div>
+										<div class="panel-body">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Email</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>John Doe</td>
+														<td>john@example.com</td>
+													</tr>
+													<tr>
+														<td>Jane Doe</td>
+														<td>jane@example.com</td>
+													</tr>
+													<tr>
+														<td>Bill Gates</td>
+														<td>bill@google.com</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="panel panel-default" id='student-profile'>
+										<div class="panel-heading">
+											<h3 class="panel-title">Group Chat</h3>
+										</div>
+										<div class="panel-body">
+											<table class="table table-striped">
+												<tbody>
+													<tr>
+														<td><strong>John:</strong></td>
+														<td>Hey guys! I'm pumped to start!</td>
+													</tr>
+													<tr>
+														<td><strong>Jane:</strong></td>
+														<td>When can everyone meet?</td>
+													</tr>
+													<tr>
+														<td><strong>Bill:</strong></td>
+														<td>Weds is good for me...anyone else?</td>
+													</tr>
+												</tbody>
+											</table>
+											<form class="form-inline" role="form">
+												<input class="form-control">
+												<button type="submit" class="btn btn-default">Post</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+		                </div>
+
+            			<div class="col-lg-4">
+							<div class="panel panel-default" id='student-profile'>
+								<div class="panel-heading">
+									<h3 class="panel-title">Projects</h3>
+								</div>
+								<div class="panel-body">
+									<table class="table table-striped">
+										<thead>
+											<tr>
+												<th>Project</th>
+												<th>Sponser</th>
+												<th>Rate</th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- <tr>
+												<td>Project</td>
+												<td>Company</td>
+												<td>
+													<select>
+														<option></option>
+													</select>
+												<td>
+											</tr> -->
+											<?php
+											for($i = 0; $i < 16; $i++) {
+												echo "<tr><td>Project " . ($i+1) . "</td>";
+												echo "<td>Company " . ($i+1) . "</td>";
+												echo "<td><select>";
+												for($j = 0; $j < 10; $j++) {
+													echo "<option>" . ($j+1) . "</option>";
+												}
+												echo "</select></td></tr>";	
+											}?>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+                	</div>		
+				</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<?require_once "footer.php";?>
