@@ -68,7 +68,8 @@
 									</div>
 								</div>
 							</form>
-						</div>        	
+						</div>
+						        	
                 	</div>
                 	<button type="submit" class="btn btn-default">Save</button>		
 				</div>
