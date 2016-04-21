@@ -20,7 +20,17 @@
 											<h3 class="panel-title">Profile</h3>
 										</div>
 										<div class="panel-body">
-											Panel content
+											<div class="row">
+                								<div class="col-lg-4">
+                									<img class="img-responsive img-rounded"src="images/profile.png">
+                								</div>
+                								<div class="col-lg-8">
+                									<h1>John Doe</h1>
+                									<h4>Major: <span class="small">Computer Science</span></h4>
+                									<h4>Email: <span class="small"><a href="#">john@asu.edu</a></span></h4>
+                								</div>
+                							</div>
+                							<h4>Interests: <span class="small">Visualization, Mobile Development, Web Design</span></h4>
 										</div>
 									</div>
 								</div>
