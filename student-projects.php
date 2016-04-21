@@ -21,7 +21,7 @@
 									<th>Contact Email</th>
 									<th>Type</th>
 									<th>Notes</th>
-									<th></th>
+									<th>Proposal</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -32,6 +32,7 @@
 									<td>hbenamor@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>EcoCar 3</td>
@@ -40,6 +41,7 @@
 									<td>Ashraf.Gaffar@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Feathir Company Website</td>
@@ -48,6 +50,7 @@
 									<td>mreeves90@cox.net</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Enhanec Interactive Online News Magazine</td>
@@ -56,6 +59,7 @@
 									<td>trina@cloudninemarketing.com</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Enfuego Dynamic Resume System and Employment Matching Platform</td>
@@ -64,6 +68,7 @@
 									<td>phughes@enfuego.tech</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Re-engineer PatientView application onto new platform</td>
@@ -72,6 +77,7 @@
 									<td>Whitmire.scott@mayo.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Secure Tele-Presence Robots</td>
@@ -80,6 +86,7 @@
 									<td>Kristie.L.Starnes@aexp.com</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Tape Measure App</td>
@@ -88,6 +95,7 @@
 									<td>rmeuth@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Unified Big Data Programming Framework on Heterogeneous Processors</td>
@@ -96,6 +104,7 @@
 									<td>mingzhao@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Virtual network based message forwarding for mission-critical cloud computing</td>
@@ -104,6 +113,7 @@
 									<td>mingzhao@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>ASU RoboSoc Devils</td>
@@ -112,6 +122,7 @@
 									<td>fainekos@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>“ASU’s Emergency Response Guide as an App” (part 2)</td>
@@ -120,6 +131,7 @@
 									<td>Jonathan.klane@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>“Engineering Chemical Labs and Inventory Regulator (ÉCLAIR) System (part 2)</td>
@@ -128,6 +140,7 @@
 									<td>Jonathan.klane@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Tight and Ultra-Tight Coupling Space GNSS Simulation Model</td>
@@ -136,6 +149,7 @@
 									<td>Mike.king@gd-ms.com</td>
 									<td>CS</td>
 									<td>NDA Required</td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>RF Mixer Spurious Response Analysis Tool</td>
@@ -144,6 +158,7 @@
 									<td>Carl.Nuckolls@gd-ms.com</td>
 									<td>CS</td>
 									<td>NDA Required</td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>High Performance Computing Radio Reference Platform for Waveform Development and Optimization</td>
@@ -152,6 +167,7 @@
 									<td>Greg.Osborn@gd-ms.com</td>
 									<td>CS</td>
 									<td>NDA Required</td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Future Design of Car Center stack.</td>
@@ -160,6 +176,7 @@
 									<td>Ashraf.Gaffar@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Human Security Interaction.</td>
@@ -168,6 +185,7 @@
 									<td>Ashraf.Gaffar@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Phoenix Comicon Conquest</td>
@@ -176,6 +194,7 @@
 									<td>mark.schlesinger@phoenixcomicon.com</td>
 									<td>CS</td>
 									<td>NDA Required</td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Improving the CSE110 recitations using an interactive software system</td>
@@ -184,6 +203,7 @@
 									<td>navabi@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Copper: The Intelligent physical storage management system (iOS App)</td>
@@ -192,6 +212,7 @@
 									<td>metcalf.bobby@gmail.com</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Financial Web/Mobile Application</td>
@@ -200,6 +221,7 @@
 									<td>tjreeves@asu.edu</td>
 									<td>CS</td>
 									<td>NDA Required</td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Interactive data analysis and visualization tools for X-ray Free-Electron Laser science</td>
@@ -208,6 +230,7 @@
 									<td>rkirian@asu.edu</td>
 									<td>CS</td>
 									<td>Open Source Project</td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Tracking Human Hands for Robotics and Neuroscience Applications</td>
@@ -216,6 +239,7 @@
 									<td>hbenamor@asu.edu</td>
 									<td>CSE</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>EcoCar 3</td>
@@ -224,6 +248,7 @@
 									<td>Ashraf.Gaffar@asu.edu</td>
 									<td>CSE</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Cat Toy Robot</td>
@@ -232,6 +257,7 @@
 									<td>rmeuth@asu.edu</td>
 									<td>CSE</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Roomba Upgrade</td>
@@ -240,6 +266,7 @@
 									<td>rmeuth@asu.edu</td>
 									<td>CSE</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Shutter Opener</td>
@@ -248,6 +275,7 @@
 									<td>rmeuth@asu.edu</td>
 									<td>CSE</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Semi-Autonomous Driving Robot</td>
@@ -256,6 +284,7 @@
 									<td>dijiang@asu.edu</td>
 									<td>CSE</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Unified Big Data Programming Framework on Heterogeneous Processors</td>
@@ -264,6 +293,7 @@
 									<td>mingzhao@asu.edu</td>
 									<td>CSE</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>ASU RoboSoc Devils</td>
@@ -272,6 +302,7 @@
 									<td>fainekos@asu.edu</td>
 									<td>CSE</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Vibration Damping System for Kinetic Environment</td>
@@ -280,6 +311,7 @@
 									<td>Carl.Nuckolls@gd-ms.com</td>
 									<td>CSE</td>
 									<td>NDA Required, Cross-discipline with Mechanical Engineering</td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>VLIW Reconfigurable DSP Element FPGA Design</td>
@@ -288,6 +320,7 @@
 									<td>James.Garvey@gd-ms.com</td>
 									<td>CSE</td>
 									<td>NDA Required</td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>High Performance Computing Radio Reference Platform for Waveform Development and Optimization</td>
@@ -296,6 +329,7 @@
 									<td>Greg.Osborn@gd-ms.com</td>
 									<td>CSE</td>
 									<td>NDA Required</td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>· All GNSS Constellation Efficient Signal Processing</td>
@@ -304,6 +338,7 @@
 									<td>Mike.king@gd-ms.com</td>
 									<td>CSE</td>
 									<td>NDA Required</td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Wireless Video Sensor Network Platform (WVSNP).</td>
@@ -312,6 +347,7 @@
 									<td>reisslein@asu.edu</td>
 									<td>CSE</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Residential fire safety (Detect-Protect-Notify)</td>
@@ -320,6 +356,7 @@
 									<td>Rmahmud@DTekt.co</td>
 									<td>CSE</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Telescope Ventures Fellows & Venture Builder </td>
@@ -328,6 +365,7 @@
 									<td>laroiakunal@gmail.com</td>
 									<td>CS</td>
 									<td>NDA Required</td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Student Team Peer Evaluation</td>
@@ -336,6 +374,7 @@
 									<td>Debra.calliss@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Cybersecurity Defense Competition</td>
@@ -344,6 +383,7 @@
 									<td>dijiang@asu.edu</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 								<tr>
 									<td>Never Too Late Mobile App</td>
@@ -352,6 +392,7 @@
 									<td>earl.aguilera@gmail.com</td>
 									<td>CS</td>
 									<td></td>
+									<td><button class="btn btn-default">View</button></td>
 								</tr>
 							</tbody>
 						</table>
