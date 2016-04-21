@@ -33,21 +33,19 @@
 										<button class="btn btn-success btn-sm col-lg-2">Join</button>
 									</div>
 								</div>
-								<div class="panel-body">
-									<table class="table table-striped">
-										<tbody>
-											<tr>
-												<td>James Aaberg</td>
-											</tr>
-											<tr>
-												<td>John Aaron</td>
-											</tr>
-											<tr>
-												<td>Robert Abarca</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+								<table class="table table-striped">
+									<tbody>
+										<tr>
+											<td>James Aaberg</td>
+										</tr>
+										<tr>
+											<td>John Aaron</td>
+										</tr>
+										<tr>
+											<td>Robert Abarca</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 						<div class="col-lg-3">
@@ -58,24 +56,22 @@
 										<button class="btn btn-success btn-sm col-lg-2">Join</button>
 									</div>
 								</div>
-								<div class="panel-body">
-									<table class="table table-striped">
-										<tbody>
-											<tr>
-												<td>Michael Abbate</td>
-											</tr>
-											<tr>
-												<td>Mary Abbess</td>
-											</tr>
-											<tr>
-												<td>William Abbott</td>
-											</tr>
-											<tr>
-												<td>David Abbratozzato</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+								<table class="table table-striped">
+									<tbody>
+										<tr>
+											<td>Michael Abbate</td>
+										</tr>
+										<tr>
+											<td>Mary Abbess</td>
+										</tr>
+										<tr>
+											<td>William Abbott</td>
+										</tr>
+										<tr>
+											<td>David Abbratozzato</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 						<div class="col-lg-3">
@@ -86,18 +82,16 @@
 										<button class="btn btn-success btn-sm col-lg-2">Join</button>
 									</div>
 								</div>
-								<div class="panel-body">
-									<table class="table table-striped">
-										<tbody>
-											<tr>
-												<td>Richard Abdelnour</td>
-											</tr>
-											<tr>
-												<td>Charles Abderrazzaq</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+								<table class="table table-striped">
+									<tbody>
+										<tr>
+											<td>Richard Abdelnour</td>
+										</tr>
+										<tr>
+											<td>Charles Abderrazzaq</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 						<div class="col-lg-3">
@@ -108,21 +102,19 @@
 										<button class="btn btn-info btn-sm col-lg-2">Request</button>
 									</div>
 								</div>
-								<div class="panel-body">
-									<table class="table table-striped">
-										<tbody>
-											<tr>
-												<td>Joseph Abdollah</td>
-											</tr>
-											<tr>
-												<td>Thomas Abdous</td>
-											</tr>
-											<tr>
-												<td>Patricia Abdullah</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+								<table class="table table-striped">
+									<tbody>
+										<tr>
+											<td>Joseph Abdollah</td>
+										</tr>
+										<tr>
+											<td>Thomas Abdous</td>
+										</tr>
+										<tr>
+											<td>Patricia Abdullah</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -135,24 +127,22 @@
 										<button class="btn btn-info btn-sm col-lg-2">Request</button>
 									</div>
 								</div>
-								<div class="panel-body">
-									<table class="table table-striped">
-										<tbody>
-											<tr>
-												<td>Christopher Abdulrazak</td>
-											</tr>
-											<tr>
-												<td>Linda Abe</td>
-											</tr>
-											<tr>
-												<td>Barbara Abel</td>
-											</tr>
-											<tr>
-												<td>Daniel Abelmann</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+								<table class="table table-striped">
+									<tbody>
+										<tr>
+											<td>Christopher Abdulrazak</td>
+										</tr>
+										<tr>
+											<td>Linda Abe</td>
+										</tr>
+										<tr>
+											<td>Barbara Abel</td>
+										</tr>
+										<tr>
+											<td>Daniel Abelmann</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 						<div class="col-lg-3">
@@ -162,30 +152,28 @@
 										<h2 class="panel-title col-lg-9">Team 6 (Full)</h2>
 									</div>
 								</div>
-								<div class="panel-body">
-									<table class="table table-striped">
-										<tbody>
-											<tr>
-												<td>Paul Abelson</td>
-											</tr>
-											<tr>
-												<td>Mark Abernathy</td>
-											</tr>
-											<tr>
-												<td>Elizabeth Abnet</td>
-											</tr>
-											<tr>
-												<td>Donald Abraham</td>
-											</tr>
-											<tr>
-												<td>Jennifer Abraham-Scalapino</td>
-											</tr>
-											<tr>
-												<td>George Abrams</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+								<table class="table table-striped">
+									<tbody>
+										<tr>
+											<td>Paul Abelson</td>
+										</tr>
+										<tr>
+											<td>Mark Abernathy</td>
+										</tr>
+										<tr>
+											<td>Elizabeth Abnet</td>
+										</tr>
+										<tr>
+											<td>Donald Abraham</td>
+										</tr>
+										<tr>
+											<td>Jennifer Abraham-Scalapino</td>
+										</tr>
+										<tr>
+											<td>George Abrams</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>		
