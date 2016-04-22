@@ -2,7 +2,7 @@
 
 <div id="wrapper">
 
-    <?require_once "sponser-sidebar.php";?>
+    <?require_once "Sponsor-sidebar.php";?>
 
     <!-- Page Content -->
     <div id="page-content-wrapper">

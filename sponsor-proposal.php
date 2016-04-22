@@ -2,7 +2,7 @@
 
 <div id="wrapper">
 
-    <?require_once "sponser-sidebar.php";?>
+    <?require_once "Sponsor-sidebar.php";?>
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -57,7 +57,7 @@
 										<div class="form-group">
 											<label for="learning">Student learning experience: Provide insight into what the students would learn by
 											working on this project. Also provide a description of the expected frequency of
-											meetings, meeting modalities/locations, and level of sponsor involvement in the
+											meetings, meeting modalities/locations, and level of Sponsor involvement in the
 											project.</label>
 											<textarea class="form-control" rows="5" id="learning"></textarea>
 										</div>
