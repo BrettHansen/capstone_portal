@@ -16,7 +16,7 @@
 							<thead>
 								<tr>
 									<th>Project Title</th>
-									<th>Sponser</th>
+									<th>Sponsor</th>
 									<th>Contact Name</th>
 									<th>Contact Email</th>
 									<th>Type</th>

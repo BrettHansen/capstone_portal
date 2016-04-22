@@ -18,7 +18,7 @@
 							</div>
 							<button type="submit" class="btn btn-default">Submit</button>
 							<button class='btn btn-default'><a href='student-dashboard.php'>Student</a></button>
-					    	<button class='btn btn-default'><a href='sponser-dashboard.php'>Sponser</a></button>
+					    	<button class='btn btn-default'><a href='sponsor-dashboard.php'>Sponsor</a></button>
 					    	<button class='btn btn-default'><a href='instructor-dashboard.php'>Instructor</a></button>
 						</form>
 					</div>

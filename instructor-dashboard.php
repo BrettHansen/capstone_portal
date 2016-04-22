@@ -65,7 +65,7 @@
 								<table class="table table-striped">
 									<thead>
 										<tr>
-											<th>Sponser</th>
+											<th>Sponsor</th>
 											<th>Project</th>
 											<th>Submitted</th>
 											<th></th>

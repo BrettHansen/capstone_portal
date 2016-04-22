@@ -127,7 +127,7 @@
 										<thead>
 											<tr>
 												<th>Project</th>
-												<th>Sponser</th>
+												<th>Sponsor</th>
 												<th>Rate</th>
 											</tr>
 										</thead>
