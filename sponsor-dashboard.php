@@ -2,14 +2,14 @@
 
 <div id="wrapper">
 
-    <?require_once "Sponsor-sidebar.php";?>
+    <?require_once "sponsor-sidebar.php";?>
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                	<h1>Sponser Dashboard</h1>
+                	<h1>Sponsor Dashboard</h1>
 
                 	<div class="row">
                 		<div class="col-lg-4">
