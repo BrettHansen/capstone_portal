@@ -169,51 +169,25 @@
 								<div class='panel-heading'>
 									<div class='row'>
 										<h2 class='panel-title col-lg-9'>New Team</h2><br/>
-										<label class='radio-inline'><input type='radio' name='radio' value='Private'>Private</label>
-										<label class='radio-inline'><input type='radio' name='radio' value='Public'>Public</label>
+										<label class='radio-inline'><input id='team-type1' type='radio' name='radio' value='Private'>Private</label>
+										<label class='radio-inline'><input id='team-type2' type='radio' name='radio' value='Public'>Public</label>
 										<button class='btn btn-default' onclick='saveTeam()'>Save</button>
 									</div>
 								</div>
-								<table class='table table-striped'>
-									<tbody>
-										<tr>
-											<td><input class='form-control name' id='p1'></td>
-										</tr>
-										<tr>
-											<td><input class='form-control name' id='p2'></td>
-										</tr>
-										<tr>
-											<td><input class='form-control name' id='p3'></td>
-										</tr>
-										<tr>
-											<td><input class='form-control name' id='p4'></td>
-										</tr>
-									</tbody>
-								</table>
 							</div>
 						</div>
 
 						<div hidden class="col-lg-3" id="savedTeam">
-							<div class="panel panel-success" id='student-profile'>
+							<div class="panel" id='student-profile'>
 								<div class="panel-heading">
 									<div class="row">
-										<h2 class="panel-title col-lg-9">Team 7 (Open)</h2>
-										<button class="btn btn-success btn-sm col-lg-2">Join</button>
+										<h2 id="dummyid" class="panel-title col-lg-9">Team 7</h2>
 									</div>
 								</div>
 								<table class="table table-striped">
 									<tbody id="newNames">
 										<tr>
-											<td id='np1'></td>
-										</tr>
-										<tr>
-											<td id='np2'></td>
-										</tr>
-										<tr>
-											<td id='np3'></td>
-										</tr>
-										<tr>
-											<td id='np4'></td>
+											<td id='np1'>John Doe</td>
 										</tr>
 									</tbody>
 								</table>
@@ -229,18 +203,15 @@
 
 <script>
 	function saveTeam() {
-		$('#np1').text($('#p1').val());
-		$('#np2').text($('#p2').val());
-		$('#np3').text($('#p3').val());
-		$('#np4').text($('#p4').val());
-		$('#np5').text($('#p5').val());
-		$('#np6').text($('#p6').val());
-
 		$('#newTeam').hide();
-
-
+		if($("#newTeam #team-type1")[0].checked) {
+			$('#savedTeam #student-profile').addClass('panel-info');
+			$('#savedTeam #dummyid').html('Team 7 (Private)')
+		} else {
+			$('#savedTeam #student-profile').addClass('panel-success');
+			$('#savedTeam #dummyid').html('Team 7 (Open)')
+		}
 		$('#savedTeam').show();
-
 	}
 	function addTeam() {	
 		$('#newTeam').show();
