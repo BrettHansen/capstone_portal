@@ -1,17 +1,23 @@
 <?php
+require('includes/config.php');
 
 $email		= $_POST['email'];
 $password	= $_POST['password'];
 
-$hash = '$2y$10$kbuhu6WLB8/LNY.CzE.kDu7acjH97LJ8cGc8z2uA6dzbDfF7bmXsu';
+$db = new Database();
 
-var_dump($_POST);
-echo "<br>";
-
-if (password_verify($password, $hash)) {
-    echo 'Password is valid!';
-} else {
-    echo 'Invalid password.';
+// Check if user exists
+$result = $db->query("SELECT * FROM users WHERE email = '{$email}'");
+if(count($result) == 0) {
+	echo 'No User';
 }
+else{
+	if (password_verify($password, $result[0]['password'])) {
+	    echo 'Password is valid!';
+	} else {
+	    echo 'Invalid password.';
+	}
+}
+
 
 ?>
