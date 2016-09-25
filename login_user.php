@@ -5,6 +5,9 @@ $password	= $_POST['password'];
 
 $hash = '$2y$10$kbuhu6WLB8/LNY.CzE.kDu7acjH97LJ8cGc8z2uA6dzbDfF7bmXsu';
 
+var_dump($_POST);
+echo "<br>";
+
 if (password_verify($password, $hash)) {
     echo 'Password is valid!';
 } else {

@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<title>ASU Capstone Portal</title>
-</head>
-<body>
+<?require_once "header.php";?>
 
-<div>
-	<form action="login_user.php" method="post">
-		Email
-		<input type="text" name="email">
-		Password
-		<input type="password" name="password">
-		<input type="submit" name="Login">
-	</form>
-</div>
-
-<div id="register_form">
+<!-- <div id="register_form">
 	<form action="register_user.php" method="post">
 		ASURITE
 		<input type="text" name="asurite">
@@ -29,7 +12,31 @@
 		<input type="password" name="password">
 		<input type="submit" name="Register">
 	</form>
+</div> -->
+
+<div id="page-content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4">
+            	<h1 class="text-center">ASU Capstone Portal</h1>
+            	<div class="panel panel-default" id='login'>
+            		<div class="panel-body">
+            			<form role="form" action="login_user.php" method="post">
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" name="email">
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" name="password">
+							</div>
+							<button type="submit" class="btn btn-default" name="submit">Sign In</button>
+						</form>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
 </div>
 
-</body>
-</html>
+<?require_once "footer.php";?>
