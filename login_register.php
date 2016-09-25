@@ -9,8 +9,8 @@
 					<div class="panel-body">
 						<form role="form" action="login_user.php" method="post">
 							<div class="form-group">
-								<label for="email">Email</label>
-								<input type="email" class="form-control" name="email">
+								<label for="asurite">ASURITE</label>
+								<input type="asurite" class="form-control" name="asurite">
 							</div>
 							<div class="form-group">
 								<label for="password">Password</label>
@@ -28,16 +28,16 @@
 					<div class="panel-body">
 						<form role="form" action="register_user.php" method="post">
 							<div class="form-group">
-								<label for="asurite">ASURITE</label>
-								<input type="asurite" class="form-control" name="asurite">
-							</div>
-							<div class="form-group">
 								<label for="name">Name</label>
 								<input type="name" class="form-control" name="name">
 							</div>
 							<div class="form-group">
 								<label for="email">Email</label>
 								<input type="email" class="form-control" name="email">
+							</div>
+							<div class="form-group">
+								<label for="asurite">ASURITE</label>
+								<input type="asurite" class="form-control" name="asurite">
 							</div>
 							<div class="form-group">
 								<label for="password">Password</label>
