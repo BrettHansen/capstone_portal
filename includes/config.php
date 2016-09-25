@@ -1,5 +1,4 @@
 <?php
-header("Access-Control-Allow-Origin: *");
 
 // Includes
 require_once('database.php');
