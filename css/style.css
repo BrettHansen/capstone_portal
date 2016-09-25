@@ -115,3 +115,11 @@
         margin-right: 0;
     }
 }
+
+#login {
+
+}
+
+#register {
+    display: none;
+}
