@@ -1,13 +1,13 @@
 <?php
 require('includes/config.php');
 
-$email		= $_POST['email'];
+$asurite	= $_POST['asurite'];
 $password	= $_POST['password'];
 
 $db = new Database();
 
 // Check if user exists
-$result = $db->query("SELECT * FROM users WHERE email = '{$email}'");
+$result = $db->query("SELECT * FROM users WHERE asurite = '{$asurite}'");
 if(count($result) == 0) {
 	echo 'No User';
 }
