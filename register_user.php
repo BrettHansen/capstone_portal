@@ -25,8 +25,17 @@ if(count($result) > 0) {
 	echo 'User already exists';
 }
 else {
-	echo "INSERT INTO users(name, role, email, asurite, password)  VALUES('{$name}',1,'{$name}','{$asurite}','{$password}')";
-	$db->query("INSERT INTO users(name, role, email, asurite, password)  VALUES('{$name}',1,'{$name}','{$asurite}','{$password}')");
-	echo 'User added';
+	// Add new user to data
+	$result = $db->query("INSERT INTO users(name, role, email, asurite, password)  VALUES('{$name}',1,'{$name}','{$asurite}','{$password}')");
+	if($result) {
+		// start session and redirect
+		session_start();
+		$_SESSION['user'] = $asurite;
+		redirect('index.php');
+	}
+	else {
+		// error page of some sort
+	}
+
 }
 ?>

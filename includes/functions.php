@@ -1,11 +1,10 @@
 <?
 
-require('config.php');
-
-$db = new Database();
-
-$result = $db->query("SELECT * FROM role_codes");
-print_r($result)
+function redirect($url, $statusCode = 303)
+{
+   header('Location: ' . $url, true, $statusCode);
+   die();
+}
 
 
 ?>
