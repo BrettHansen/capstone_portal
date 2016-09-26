@@ -9,11 +9,8 @@ if(!isset($_SESSION['user_id'])) {
 }
 
 // Since they are logged in, get the info and proceed
-$result = $db->query("SELECT FROM")
-$userName = $_SESSION['user_name'];
-$userRole = $_SESSION['user_role'];
-
-
+$result = $db->query("SELECT * FROM users INNER JOIN student_details ON users.id=student_details.id AND users.id = {$_SESSION['user_id']}");
+$user = $result[0];
 require_once "header.php";
 ?>
 
@@ -42,9 +39,9 @@ require_once "header.php";
                 									<img class="img-responsive img-rounded"src="images/profile.png">
                 								</div>
                 								<div class="col-lg-8">
-                									<h1><?echo $userName?></h1>
-                									<h4>Major: <span class="small">Computer Science</span></h4>
-                									<h4>Email: <span class="small"><a href="#"><?echo $userName?></a></span></h4>
+                									<h1><?echo $user['name']?></h1>
+                									<h4>Major: <span class="small"><?echo $user['major']?></span></h4>
+                									<h4>Email: <span class="small"><a href="#"><?echo $user['email']?></a></span></h4>
                 								</div>
                 							</div>
                 							<h4>Interests: <span class="small">Visualization, Mobile Development, Web Design</span></h4>
@@ -77,28 +74,29 @@ require_once "header.php";
 											<h3 class="panel-title">My Team</h3>
 										</div>
 										<div class="panel-body">
-											<table class="table table-striped">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Email</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>John Doe</td>
-														<td>john@example.com</td>
-													</tr>
-													<tr>
-														<td>Jane Doe</td>
-														<td>jane@example.com</td>
-													</tr>
-													<tr>
-														<td>Bill Gates</td>
-														<td>bill@google.com</td>
-													</tr>
-												</tbody>
-											</table>
+											<?if($user['team_id'] == 0) {?>
+												<p>No team selected</p>
+											<?}
+											else {?>
+												<table class="table table-striped">
+													<thead>
+														<tr>
+															<th>Name</th>
+															<th>Email</th>
+														</tr>
+													</thead>
+													<tbody>
+														<?
+															$result = $db->query("SELECT * FROM student_details INNER JOIN users ON student_details.id=users.id AND student_details.team_id = {$user['team_id']}");
+															for($i = 0; $i < count($result); $i++) {?>
+																<tr>
+																	<td><?echo $result[$i]['name']?></td>
+																	<td><?echo $result[$i]['email']?></td>
+																</tr>
+															<?}?>
+													</tbody>
+												</table>
+											<?}?>
 										</div>
 									</div>
 								</div>
