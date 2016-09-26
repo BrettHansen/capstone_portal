@@ -1,13 +1,15 @@
 <?
 require_once('includes/config.php');
+$db = new Database();
 
 // Check if the user is logged in, and if not send them back
 session_start();
-if(!isset($_SESSION['user_name'])) {
+if(!isset($_SESSION['user_id'])) {
 	redirect('login_register.php');
 }
 
 // Since they are logged in, get the info and proceed
+$result = $db->query("SELECT FROM")
 $userName = $_SESSION['user_name'];
 $userRole = $_SESSION['user_role'];
 
@@ -40,9 +42,9 @@ require_once "header.php";
                 									<img class="img-responsive img-rounded"src="images/profile.png">
                 								</div>
                 								<div class="col-lg-8">
-                									<h1>John Doe</h1>
+                									<h1><?echo $userName?></h1>
                 									<h4>Major: <span class="small">Computer Science</span></h4>
-                									<h4>Email: <span class="small"><a href="#">john@asu.edu</a></span></h4>
+                									<h4>Email: <span class="small"><a href="#"><?echo $userName?></a></span></h4>
                 								</div>
                 							</div>
                 							<h4>Interests: <span class="small">Visualization, Mobile Development, Web Design</span></h4>

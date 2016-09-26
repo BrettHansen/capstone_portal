@@ -20,23 +20,19 @@ $password = $db->clean($password);
 $password = password_hash($password, PASSWORD_DEFAULT);
 
 // Check if user is unique
-$result = $db->query("SELECT * FROM users WHERE asurite = '{$asurite}'");
+$result = $db->query("SELECT * FROM users WHERE email = '{$email}'");
 if(count($result) > 0) {
 	echo 'User already exists';
 }
 else {
 	// Add new user to data
-	$result = $db->query("INSERT INTO users(name, role, email, asurite, password)  VALUES('{$name}',1,'{$name}','{$asurite}','{$password}')");
-	if($result) {
-		// start session and redirect
-		session_start();
-		$_SESSION['user_name'] = $name;
-		$_SESSION['user_role'] = 1;
-		redirect('dashboard.php');
-	}
-	else {
-		// error page of some sort
-	}
-
+	$db->query("INSERT INTO users(role, email, password)  VALUES(1,'{$email}','{$password}')");
+	$result = $db->query("SELECT * FROM users WHERE email = '{$email}'");
+	$db->query("INSERT INTO student_details(id, name, asurite)  VALUES('{$result[0]['id']}','{$name}','{$password}')");
+	// start session and redirect
+	session_start();
+	$_SESSION['user_id'] = $result[0]['id'];
+	$_SESSION['user_role'] = $result[0]['role'];
+	redirect('dashboard.php');
 }
 ?>
