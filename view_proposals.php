@@ -8,6 +8,9 @@ $forms = $db->query("SELECT * FROM proposal_forms");
 ?>
 
 <div id="wrapper">
+
+    <?require_once "sidebar.php";?>
+
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
