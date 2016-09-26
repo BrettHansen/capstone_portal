@@ -15,7 +15,10 @@ if(count($result) == 0) {
 }
 else{
 	if (password_verify($password, $result[0]['password'])) {
-	    echo 'Password is valid!';
+	    session_start();
+		$_SESSION['user_name'] = $result[0]['name'];
+		$_SESSION['user_role'] = $result[0]['role'];
+		redirect('dashboard.php');
 	} else {
 	    echo 'Invalid password.';
 	}

@@ -1,19 +1,25 @@
 <?
+require_once('includes/config.php');
+
+// Check if the user is logged in, and if not send them back
 session_start();
+if(!isset($_SESSION['user_name'])) {
+	redirect('login_register.php');
+}
+
+// Since they are logged in, get the info and proceed
 $userName = $_SESSION['user_name'];
 $userRole = $_SESSION['user_role'];
 
 
 require_once "header.php";
-
-
 ?>
 
 <div id="wrapper">
 
     <?require_once "sidebar.php";?>
 
-    <!-- Page Content
+    <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -149,17 +155,17 @@ require_once "header.php";
 														<option></option>
 													</select>
 												<td>
-											</tr> ->
+											</tr> -->
 											<?php
-											// for($i = 0; $i < 16; $i++) {
-											// 	echo "<tr><td>Project " . ($i+1) . "</td>";
-											// 	echo "<td>Company " . ($i+1) . "</td>";
-											// 	echo "<td><select>";
-											// 	for($j = 0; $j < 10; $j++) {
-											// 		echo "<option>" . ($j+1) . "</option>";
-											// 	}
-											// 	echo "</select></td></tr>";	
-											//}?>
+											for($i = 0; $i < 16; $i++) {
+												echo "<tr><td>Project " . ($i+1) . "</td>";
+												echo "<td>Company " . ($i+1) . "</td>";
+												echo "<td><select>";
+												for($j = 0; $j < 10; $j++) {
+													echo "<option>" . ($j+1) . "</option>";
+												}
+												echo "</select></td></tr>";	
+											}?>
 										</tbody>
 									</table>
 								</div>
@@ -169,7 +175,7 @@ require_once "header.php";
 				</div>
             </div>
         </div>
-    </div>-->
+    </div>
 
 </div>
 

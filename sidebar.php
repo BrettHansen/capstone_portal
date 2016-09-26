@@ -8,6 +8,6 @@
         <? if($_SESSION['user_role'] != 3) {?><li><a href="student-students.php">Students</a></li><?}?>
         <? if($_SESSION['user_role'] != 3) {?><li><a href="student-teams.php">Teams</a></li><?}?>
         <? if($_SESSION['user_role'] == 2) {?><li><a href="#">Settings</a></li><?}?>
-        <li><a href="index.php">Sign Out</a></li>
+        <li><a href="logout.php">Sign Out</a></li>
     </ul>
 </div>

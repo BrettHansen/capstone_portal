@@ -32,7 +32,7 @@ else {
 		session_start();
 		$_SESSION['user_name'] = $name;
 		$_SESSION['user_role'] = 1;
-		redirect('index.php');
+		redirect('dashboard.php');
 	}
 	else {
 		// error page of some sort

@@ -1,0 +1,30 @@
+\BOOKMARK [1][-]{section.1}{Revision History}{}% 1
+\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Purpose}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Scope}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Product Overview}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Product Users}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Use Case Actors}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Goals}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Assumptions and Dependencies}{}% 9
+\BOOKMARK [1][-]{section.5}{High-level Subsystem Requirements}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{Sponsor Framework}{section.5}% 11
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Description}{subsection.5.1}% 12
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Requirements}{subsection.5.1}% 13
+\BOOKMARK [3][-]{subsubsection.5.1.3}{Use Case Diagram}{subsection.5.1}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Student Framework}{section.5}% 15
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Description}{subsection.5.2}% 16
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Requirements}{subsection.5.2}% 17
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Use Case Diagram}{subsection.5.2}% 18
+\BOOKMARK [2][-]{subsection.5.3}{Instructor Framework}{section.5}% 19
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Description}{subsection.5.3}% 20
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Requirements}{subsection.5.3}% 21
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Use Case Diagram}{subsection.5.3}% 22
+\BOOKMARK [1][-]{section.6}{System Requirements}{}% 23
+\BOOKMARK [2][-]{subsection.6.1}{Platform Support}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.2}{Database Support}{section.6}% 25
+\BOOKMARK [2][-]{subsection.6.3}{Browser Support}{section.6}% 26
+\BOOKMARK [1][-]{section.7}{Application Requirements}{}% 27
+\BOOKMARK [2][-]{subsection.7.1}{Security}{section.7}% 28
+\BOOKMARK [2][-]{subsection.7.2}{Localization}{section.7}% 29
+\BOOKMARK [2][-]{subsection.7.3}{Installation Requirements}{section.7}% 30
