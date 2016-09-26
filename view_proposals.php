@@ -15,12 +15,19 @@ $forms = $db->query("SELECT * FROM proposal_forms");
                 	<h1>All Proposals</h1>
 
                 	<?php
-            		foreach($forms as $value) { 
-                		$form = json_decode($value["form"], true);
+            		foreach($forms as $key => $value) { 
+                		$form = json_decode(preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $value["form"]), true);
                 	?>
 						<div class="row">
 	                		<div class="col-lg-10">
-								<div class="panel panel-default" id="student-profile">
+		                		<div class="panel panel-default" id=<?php echo "short_".$key ?>>
+									<div class="panel-heading">
+										<button class="btn btn-info short_description_expand">Expand</button>
+										<h3 class="panel-title short_description_title"><?php echo $form["description_title"]; ?></h3>
+									</div>
+								</div>
+
+								<div class="panel panel-default" id=<?php echo "contact_".$key ?>>
 									<div class="panel-heading">
 										<h3 class="panel-title">Contact Information</h3>
 									</div>
@@ -40,7 +47,7 @@ $forms = $db->query("SELECT * FROM proposal_forms");
 									</div>
 								</div>
 
-								<div class="panel panel-default" id="student-profile">
+								<div class="panel panel-default" id=<?php echo "description_".$key ?>>
 									<div class="panel-heading">
 										<h3 class="panel-title">Project Description</h3>
 									</div>
@@ -63,20 +70,7 @@ $forms = $db->query("SELECT * FROM proposal_forms");
 									</div>
 								</div>
 
-								<div class="panel panel-default" id="student-profile">
-									<div class="panel-heading">
-										<h3 class="panel-title">Required Agreements</h3>
-									</div>
-									<div class="panel-body">
-										<div class="form-group col-lg-12">
-											<div class="form-group">
-												<h4 class="form-group">File:</h4><?php echo $form["agreement"]; ?>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="panel panel-default" id="student-profile">
+								<div class="panel panel-default" id=<?php echo "other_".$key ?>>
 									<div class="panel-heading">
 										<h3 class="panel-title">Other Information</h3>
 									</div>
@@ -96,6 +90,8 @@ $forms = $db->query("SELECT * FROM proposal_forms");
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="view_proposals.js"></script>
 
 
 <?
