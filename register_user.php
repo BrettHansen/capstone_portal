@@ -30,7 +30,8 @@ else {
 	if($result) {
 		// start session and redirect
 		session_start();
-		$_SESSION[]
+		$_SESSION['user'] = $asurite;
+		redirect('index.php');
 	}
 	else {
 		// error page of some sort
