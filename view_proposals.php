@@ -12,7 +12,7 @@ $forms = $db->query("SELECT * FROM proposal_forms");
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                	<h1>Proposals</h1>
+                	<h1>All Proposals</h1>
 
                 	<?php
             		foreach($forms as $value) { 
