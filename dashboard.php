@@ -1,11 +1,19 @@
-<?session_start();?>
-<?require_once "header.php";?>
+<?
+session_start();
+$userName = $_SESSION['user_name'];
+$userRole = $_SESSION['user_role'];
+
+
+require_once "header.php";
+
+
+?>
 
 <div id="wrapper">
 
-    <?require_once "student-sidebar.php";?>
+    <?require_once "sidebar.php";?>
 
-    <!-- Page Content -->
+    <!-- Page Content
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -133,7 +141,7 @@
 											</tr>
 										</thead>
 										<tbody>
-											<!-- <tr>
+											<!- <tr>
 												<td>Project</td>
 												<td>Company</td>
 												<td>
@@ -141,17 +149,17 @@
 														<option></option>
 													</select>
 												<td>
-											</tr> -->
+											</tr> ->
 											<?php
-											for($i = 0; $i < 16; $i++) {
-												echo "<tr><td>Project " . ($i+1) . "</td>";
-												echo "<td>Company " . ($i+1) . "</td>";
-												echo "<td><select>";
-												for($j = 0; $j < 10; $j++) {
-													echo "<option>" . ($j+1) . "</option>";
-												}
-												echo "</select></td></tr>";	
-											}?>
+											// for($i = 0; $i < 16; $i++) {
+											// 	echo "<tr><td>Project " . ($i+1) . "</td>";
+											// 	echo "<td>Company " . ($i+1) . "</td>";
+											// 	echo "<td><select>";
+											// 	for($j = 0; $j < 10; $j++) {
+											// 		echo "<option>" . ($j+1) . "</option>";
+											// 	}
+											// 	echo "</select></td></tr>";	
+											//}?>
 										</tbody>
 									</table>
 								</div>
@@ -161,7 +169,7 @@
 				</div>
             </div>
         </div>
-    </div>
+    </div>-->
 
 </div>
 

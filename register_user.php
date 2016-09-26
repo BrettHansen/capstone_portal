@@ -30,7 +30,8 @@ else {
 	if($result) {
 		// start session and redirect
 		session_start();
-		$_SESSION['user'] = $asurite;
+		$_SESSION['user_name'] = $name;
+		$_SESSION['user_role'] = 1;
 		redirect('index.php');
 	}
 	else {
