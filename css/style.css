@@ -14,3 +14,7 @@
 .short_description_expand {
     margin: 0 10px;
 }
+
+.short_description_hide {
+    margin: 10px;
+}
