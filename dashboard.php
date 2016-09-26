@@ -147,25 +147,19 @@ require_once "header.php";
 											</tr>
 										</thead>
 										<tbody>
-											<!- <tr>
-												<td>Project</td>
-												<td>Company</td>
-												<td>
-													<select>
-														<option></option>
-													</select>
-												<td>
-											</tr> -->
-											<?php
-											for($i = 0; $i < 16; $i++) {
-												echo "<tr><td>Project " . ($i+1) . "</td>";
-												echo "<td>Company " . ($i+1) . "</td>";
-												echo "<td><select>";
-												for($j = 0; $j < 10; $j++) {
-													echo "<option>" . ($j+1) . "</option>";
-												}
-												echo "</select></td></tr>";	
-											}?>
+											<?
+												$result = $db->query("SELECT * FROM proposal_forms INNER JOIN projects ON proposal_forms.id=projects.proposal_id");
+												for($i = 0; $i < count($result); $i++) {
+													$project = json_decode(preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $result[$i]["form"]), true);?>
+													<tr>
+														<td><?echo $project['description_title']?></td>
+														<td><?echo $project['contact_name']?></td>
+														<td><select>
+															<?for($j = 0; $j < 10; $j++) {
+																echo "<option>" . ($j+1) . "</option>";
+															}?>
+														</select></td></tr>	
+												<?}?>
 										</tbody>
 									</table>
 								</div>
