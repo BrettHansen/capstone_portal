@@ -22,7 +22,7 @@ $forms = $db->query("SELECT * FROM proposal_forms");
                 		$form = json_decode(preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $value["form"]), true);
                 	?>
 						<div class="row">
-	                		<div class="col-lg-10">
+	                		<div class="col-lg-12">
 	                			<div class="short_description">
 			                		<div class="panel panel-default" id=<?php echo "short_".$key ?>>
 										<div class="panel-heading">
