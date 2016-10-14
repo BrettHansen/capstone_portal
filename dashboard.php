@@ -54,7 +54,7 @@ require_once "header.php";
 	                									<h4>Email: <span class="small"><a href="#"><?echo $user['email']?></a></span></h4>
 	                								</div>
 	                							</div>
-	                							<h4>Interests: <span class="small">Visualization, Mobile Development, Web Design</span></h4>
+	                							<h4>Interests: <span class="small"><?echo $user['interests']?></span></h4>
 											</div>
 										</div>
 									</div>
