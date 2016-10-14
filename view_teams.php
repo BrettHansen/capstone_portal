@@ -80,6 +80,7 @@ foreach($students_query as $value) {
 		                		<?php 
 		                		$i = 1;
 		                		foreach ($teams as $team_id => $team) {
+		                			if($_SESSION['user_role'] == 2 || count($team["members"]) > 0) {
 		                		?>
 			                		<div class="col-lg-3">
 										<div class="panel panel-success" id='student-profile'>
@@ -99,7 +100,7 @@ foreach($students_query as $value) {
 														</tr>
 													<?php
 													}
-													if($_SESSION['user_role'] == 1 && $has_no_team) { ?>
+													if($_SESSION['user_role'] == 1 && $has_no_team && count($team["members"]) < 6) { ?>
 														<tr>
 															<td>
 																<form role="form" action="view_teams.php" method="post">
@@ -125,6 +126,7 @@ foreach($students_query as $value) {
 										</div>
 									</div>
 								<?php
+									}
 								}
 								?>
 							</div>
