@@ -42,13 +42,16 @@ if($_SESSION['user_role'] == 2) {
 	}
 }
 
-$db = new Database();
 $students_query = $db->query("SELECT * FROM student_details");
 $teams_query = $db->query("SELECT * FROM teams");
 
 $students = array();
 foreach ($students_query as $value) {
-	$students[$value["id"]] = $value["name"];
+	$student = array();
+	$student["name"] = $value["name"];
+	$student["major"] = $value["major"];
+	$student["interests"] = $value["interests"];
+	$students[$value["id"]] = $student;
 }
 
 $teams = array();
@@ -93,10 +96,11 @@ foreach($students_query as $value) {
 												<tbody>
 													<?php
 													foreach ($team["members"] as $member) {
-														$name = $students[$member];
+														$student = $students[$member];
+
 													?>
 														<tr>
-															<td><?php echo $name; ?></td>
+															<td><?php echo $student["name"]; ?></td>
 														</tr>
 													<?php
 													}
