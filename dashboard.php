@@ -36,7 +36,7 @@ require_once "header.php";
 					<? if($_SESSION['user_role'] == 1) { ?>
 
 	                	<div class="row">
-	                		<div class="col-lg-8">
+	                		<div class="col-lg-12">
 	                			<div class="row">
 			                		<div class="col-lg-6">
 										<div class="panel panel-default" id='student-profile'>
@@ -64,14 +64,17 @@ require_once "header.php";
 												<h3 class="panel-title">Announcements</h3>
 											</div>
 											<div class="panel-body">
-												<h4>Homework Reminder   <small>  3-16 3:55pm</small></h4>
-												<p>This is an announcement to say that some stuff is going to happen</p>
-												<h4>Minutes link   <small>  3-16 3:55pm</small></h4>
-												<p>This is an announcement to say that some stuff is going to happen</p>
-												<h4>Projects Available   <small>  3-16 3:55pm</small></h4>
-												<p>This is an announcement to say that some stuff is going to happen</p>
-												<h4>Project Reqirements   <small>  3-16 3:55pm</small></h4>
-												<p>This is an announcement to say that some stuff is going to happen</p>
+											<?
+												$result = $db->query("SELECT * FROM announcements WHERE 1");
+												for($i = 0; $i < count($result); $i++) {
+													$title = $result[$i]["title"];
+													$text = $result[$i]["text"];
+													$date = date("D M j g:i a", $result[$i]["created"]);
+													?>
+													<small><? echo $date ?></small>
+													<h4><? echo $title ?></h4>
+													<p><? echo $text ?></p>
+												<?}?>
 											</div>
 										</div>
 									</div>
@@ -138,42 +141,41 @@ require_once "header.php";
 											</div>
 										</div>
 									</div>
+			            			<div class="col-lg-6">
+										<div class="panel panel-default" id='student-profile'>
+											<div class="panel-heading">
+												<h3 class="panel-title">Projects</h3>
+											</div>
+											<div class="panel-body">
+												<table class="table table-striped">
+													<thead>
+														<tr>
+															<th>Project</th>
+															<th>Sponsor</th>
+															<th>Rate</th>
+														</tr>
+													</thead>
+													<tbody>
+														<?
+															$result = $db->query("SELECT * FROM proposal_forms INNER JOIN projects ON proposal_forms.id=projects.proposal_id");
+															for($i = 0; $i < count($result); $i++) {
+																$project = json_decode(preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $result[$i]["form"]), true);?>
+																<tr>
+																	<td><?echo $project['description_title']?></td>
+																	<td><?echo $project['contact_name']?></td>
+																	<td><select>
+																		<?for($j = 0; $j < 10; $j++) {
+																			echo "<option>" . ($j+1) . "</option>";
+																		}?>
+																	</select></td></tr>	
+															<?}?>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
 								</div>
 			                </div>
-
-	            			<div class="col-lg-4">
-								<div class="panel panel-default" id='student-profile'>
-									<div class="panel-heading">
-										<h3 class="panel-title">Projects</h3>
-									</div>
-									<div class="panel-body">
-										<table class="table table-striped">
-											<thead>
-												<tr>
-													<th>Project</th>
-													<th>Sponsor</th>
-													<th>Rate</th>
-												</tr>
-											</thead>
-											<tbody>
-												<?
-													$result = $db->query("SELECT * FROM proposal_forms INNER JOIN projects ON proposal_forms.id=projects.proposal_id");
-													for($i = 0; $i < count($result); $i++) {
-														$project = json_decode(preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $result[$i]["form"]), true);?>
-														<tr>
-															<td><?echo $project['description_title']?></td>
-															<td><?echo $project['contact_name']?></td>
-															<td><select>
-																<?for($j = 0; $j < 10; $j++) {
-																	echo "<option>" . ($j+1) . "</option>";
-																}?>
-															</select></td></tr>	
-													<?}?>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
 	                	</div>
 					<? } ?>	
 
@@ -187,14 +189,17 @@ require_once "header.php";
 										<h3 class="panel-title">Announcements</h3>
 									</div>
 									<div class="panel-body">
-										<h4>Homework Reminder   <small>  3-16 3:55pm</small></h4>
-										<p>This is an announcement to say that some stuff is going to happen</p>
-										<h4>Minutes link   <small>  3-16 3:55pm</small></h4>
-										<p>This is an announcement to say that some stuff is going to happen</p>
-										<h4>Projects Available   <small>  3-16 3:55pm</small></h4>
-										<p>This is an announcement to say that some stuff is going to happen</p>
-										<h4>Project Reqirements   <small>  3-16 3:55pm</small></h4>
-										<p>This is an announcement to say that some stuff is going to happen</p>
+									<?
+										$result = $db->query("SELECT * FROM announcements WHERE 1");
+										for($i = 0; $i < count($result); $i++) {
+											$title = $result[$i]["title"];
+											$text = $result[$i]["text"];
+											$date = date("D M j g:i a", $result[$i]["created"]);
+											?>
+											<small><? echo $date ?></small>
+											<h4><? echo $title ?></h4>
+											<p><? echo $text ?></p>
+										<?}?>
 									</div>
 								</div>
 							</div>
@@ -234,7 +239,7 @@ require_once "header.php";
 															<td><?echo $project['contact_name']?></td>
 															<td><?echo $approval ?></td>
 														</tr>	
-													<?}?>
+												<?}?>
 											</tbody>
 										</table>
 									</div>

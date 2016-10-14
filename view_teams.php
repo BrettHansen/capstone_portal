@@ -12,22 +12,33 @@ if($_SESSION['user_role'] == 2) {
 
 } else if($_SESSION['user_role'] == 1) {
 	$result = $db->query("SELECT team_id FROM student_details WHERE id='{$_SESSION['user_id']}'");
-	$has_no_team = strcmp($result[0]['team_id'], "0") == 0;
+	if($result[0]['team_id'] == 0) {
+		$has_no_team = true;
+	} else {
+		$has_no_team = false;
+		$user_team_id = $result[0]['team_id'];
+	}
 
 	if($_POST['new_team'] && $has_no_team) {
 		// Must be done before database calls
-		if($_SESSION['user_role'] == 1)
+		if($_SESSION['user_role'] == 1) {
 			$has_no_team = false;
+		}
 
 		$db->query("INSERT INTO teams (project_id) VALUES (0)");
 		if($_SESSION['user_role'] == 1) {
 			$new_team_id = $db->query("SELECT MAX(id) FROM teams WHERE 1");
 			$new_team_id = intval($new_team_id[0]['MAX(id)']);
+			$user_team_id = $new_team_id;
 			$db->query("UPDATE student_details SET team_id='{$new_team_id}' WHERE id='{$_SESSION['user_id']}'");
 		}
 	} else if($_POST['join_team'] && $has_no_team) {
 		$has_no_team = false;
+		$user_team_id = $_POST['team_id'];
 		$db->query("UPDATE student_details SET team_id='{$_POST['team_id']}' WHERE id='{$_SESSION['user_id']}'");
+	} else if($_POST['leave_team'] && !$has_no_team) {
+		$has_no_team = true;
+		$db->query("UPDATE student_details SET team_id=0 WHERE id='{$_SESSION['user_id']}'");
 	}
 }
 
@@ -74,7 +85,7 @@ foreach($students_query as $value) {
 										<div class="panel panel-success" id='student-profile'>
 											<div class="panel-heading">
 												<div class="row">
-													<h2 class="panel-title col-lg-9">Team <?php echo $id++; ?></h2>
+													<h2 class="panel-title col-lg-9">Team <?php echo $i++; ?></h2>
 												</div>
 											</div>
 											<table class="table table-striped">
@@ -88,16 +99,26 @@ foreach($students_query as $value) {
 														</tr>
 													<?php
 													}
-													if($has_no_team && $_SESSION['user_role'] == 1) { ?>
+													if($_SESSION['user_role'] == 1 && $has_no_team) { ?>
 														<tr>
 															<td>
 																<form role="form" action="view_teams.php" method="post">
 																	<input type="hidden" class="form-control" name="join_team" value="true" />
 																	<input type="hidden" class="form-control" name="team_id" value=<? echo "\"".$team_id."\""; ?> />
-																	<button type="submit" class="btn btn-default" name="submit">Join This Team</button>
+																	<button type="submit" class="btn btn-success" name="submit">Join This Team</button>
 																</form>
 															</td>
 														</tr>
+													<?
+													} else if($_SESSION['user_role'] == 1 && $user_team_id == $team_id) { ?>
+														<tr>
+															<td>
+																<form role="form" action="view_teams.php" method="post">
+																	<input type="hidden" class="form-control" name="leave_team" value="true" />
+																	<button type="submit" class="btn btn-danger" name="submit">Leave Your Team</button>
+																</form>
+															</td>
+														</tr>													
 													<? } ?>
 												</tbody>
 											</table>
@@ -114,7 +135,7 @@ foreach($students_query as $value) {
             <? if($has_no_team) { ?>
 				<form role="form" action="view_teams.php" method="post">
 					<input type="hidden" class="form-control" name="new_team" value="true" />
-					<button type="submit" class="btn btn-default" name="submit">Create New Team</button>
+					<button type="submit" class="btn btn-primary" name="submit">Create New Team</button>
 				</form>
 			<? } ?>
         </div>
