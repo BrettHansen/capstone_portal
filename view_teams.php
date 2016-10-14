@@ -67,13 +67,14 @@ foreach($students_query as $value) {
 						<div class="col-lg-9">
 		                	<div class="row">
 		                		<?php 
+		                		$i = 1;
 		                		foreach ($teams as $team_id => $team) {
 		                		?>
 			                		<div class="col-lg-3">
 										<div class="panel panel-success" id='student-profile'>
 											<div class="panel-heading">
 												<div class="row">
-													<h2 class="panel-title col-lg-9">Team <?php echo $team_id; ?></h2>
+													<h2 class="panel-title col-lg-9">Team <?php echo $id++; ?></h2>
 												</div>
 											</div>
 											<table class="table table-striped">
